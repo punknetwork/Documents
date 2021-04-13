@@ -11,19 +11,19 @@
       
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.0">
     
     
       
-        <title>punknetwork</title>
+        <title>系统架构 - punknetwork</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.33e2939f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.33e2939f.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
         
           
           
@@ -57,12 +57,17 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="pink" data-md-color-accent="indigo">
   
     
-    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -71,7 +76,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="punknetwork" class="md-header__button md-logo" aria-label="punknetwork" data-md-component="logo">
+    <a href=".." title="punknetwork" class="md-header__button md-logo" aria-label="punknetwork" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -90,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              首页
+              系统架构
             
           </span>
         </div>
@@ -151,7 +156,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="punknetwork" class="md-nav__button md-logo" aria-label="punknetwork" data-md-component="logo">
+    <a href=".." title="punknetwork" class="md-nav__button md-logo" aria-label="punknetwork" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -168,18 +173,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         首页
       </a>
-      
     </li>
   
 
@@ -190,12 +188,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       <label class="md-nav__link" for="__nav_2">
         深入了解
@@ -211,11 +211,66 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="Structure/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          系统架构
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         系统架构
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    系统架构
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    架构设计
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    独立模式
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    引用文献
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -225,7 +280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Terminology/" class="md-nav__link">
+      <a href="../Terminology/" class="md-nav__link">
         术语整理
       </a>
     </li>
@@ -245,23 +300,75 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    系统架构
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    架构设计
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    独立模式
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    引用文献
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>首页</h1>
+                  <h1>系统架构</h1>
                 
-                <hr />
-<p><strong>Punk.Network Substrate Lab</strong></p>
-<hr />
-<ol>
-<li>概述</li>
-</ol>
-<p>Punk.Network是以NPoS（提名权益机制）作为共识机制的，基于Substrate架构开发的，可容纳广泛资产类型，大量交易与各类智能合约的开放式高性能智能公链。</p>
-<p>PUNK致力于成为虚拟世界的综合资产解决方案的供应体系，为多元化的虚拟资产(Fungible Token &amp; None Fungible Token)提供去中心化的、发行、流转及各类合约(法务、金融、合同等)的高性能技术支持，以应用于游戏、艺术及衍生的海量场景，结合高度自治的 DAO（分布式自治组织），融合成为多元化的、未来化的电子赛博生态。</p>
-<p>Punk.Network是Polkadot生态积极拥护者。让所有人能高效且低成本地使用Web3.0区块链技术，享受其带来的便捷服务及前沿生态红利，是Punk.Network的愿景。</p>
+                <h2 id="_1"><strong>系统架构</strong></h2>
+<h2 id="_2"><strong>架构设计</strong></h2>
+<p>为兼容适配Polkadot生态，Punk.Network采用substrate框架进行开发。这是一种用于构建分布式或去中心化系统的框架，比如加密货币项目，或消息总线系统。
+这是一种开发者友好的框架，公链上的DApp开发者可以更专注于产品的核心业务逻辑。
+Substrate框架中使用了Rust语言的宏，使得代码的运行更为简洁。宏在Rust中也是一种零成本抽象，会在编译器中把宏展开成更为复杂的Rust代码，再编译为Wasm。
+Punk.Network将同样采用NPoS共识机制作为激励模型，这是一种高效且低成本的共识机制，其利益分配也更合理---激励将被授予所有建设参与者而非一小部分节点。采用这一共识机制亦是对Polkadot生态的致敬。
+Punk.Network初始验证人节点数为21个，随着社区治理逐步增加。</p>
+<h2 id="_3"><strong>独立模式</strong></h2>
+<p>Punk.Network可以作为一个独立的公链网络运行，并负责自己的共识安全。</p>
+<h2 id="_4"><strong>引用文献</strong></h2>
+<p>[1] <a href="https://substrate.dev/">Substrate</a></p>
                 
               
               
@@ -280,14 +387,28 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
+        <a href=".." class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              首页
+            </div>
+          </div>
+        </a>
       
-        <a href="Structure/" class="md-footer__link md-footer__link--next" rel="next">
+      
+        <a href="../Terminology/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              系统架构
+              术语整理
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -316,10 +437,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.d892486b.min.js"></script>
+      <script src="../assets/javascripts/bundle.d892486b.min.js"></script>
       
     
   </body>
