@@ -1,0 +1,24 @@
+site_name: punknetwork
+site_description: Punk Network Technical documents
+# copyright: Copyright © 2021 [punknetwork](https://github.com/punknetwork/)
+
+nav:
+- 首页: index.md
+- 深入了解: 
+  - 系统架构: Structure.md
+  - 术语整理: Terminology.md
+
+theme:
+  name: 'material'
+  language: 'en'  
+  palette:  
+    primary: 'pink'
+    accent: 'indigo'
+  feature:
+    tabs: true  
+
+# markdown_extentions:
+#   - admonition
+
+# plugins:
+#   - search
