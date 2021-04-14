@@ -1,0 +1,706 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Punk Network Technical documents">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.0">
+    
+    
+      
+        <title>PunkNetwork经济白皮书 - punknetwork</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.33e2939f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#e92063">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="pink" data-md-color-accent="indigo">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="punknetwork" class="md-header__button md-logo" aria-label="punknetwork" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            punknetwork
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              PunkNetwork经济白皮书
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="punknetwork" class="md-nav__button md-logo" aria-label="punknetwork" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    punknetwork
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        首页
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        深入了解
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="深入了解" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          深入了解
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Structure/" class="md-nav__link">
+        系统架构
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Terminology/" class="md-nav__link">
+        术语整理
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Staking/" class="md-nav__link">
+        Staking
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Polkadot/" class="md-nav__link">
+        Polkadot生态开发者专页
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.Accounts/" class="md-nav__link">
+        Accounts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.cryptography/" class="md-nav__link">
+        密码学
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8.key/" class="md-nav__link">
+        密钥
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../9.NFT/" class="md-nav__link">
+        NFT
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.contract/" class="md-nav__link">
+        合约
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11.govern/" class="md-nav__link">
+        治理
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12.course/" class="md-nav__link">
+        课程列表
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          PunkNetwork经济白皮书
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        PunkNetwork经济白皮书
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    概述
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#punk" class="md-nav__link">
+    PUNK的分配
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    交易手续费
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#punk_1" class="md-nav__link">
+    PUNK的职能
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    金融生态
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    总结
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    概述
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#punk" class="md-nav__link">
+    PUNK的分配
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    交易手续费
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#punk_1" class="md-nav__link">
+    PUNK的职能
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    金融生态
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    总结
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>PunkNetwork经济白皮书</h1>
+                
+                <p><strong>Punk.Network经济白皮书</strong></p>
+<hr />
+<p><em>本文档所涵盖的某些前瞻性陈述，如“可能”、“将”、“应该”、“项目”、“预期”、“相信”、“估计”、“打算”、“期望”、“继续”及类似表达，以及项目及其关联项目或主体的预期行动和目标，涉及相关的风险（已知或未知的）、不确定性以及其他可能。
+开发者在开发、运营和维护Punk.Network主网及其相关的应用、通证发行和市场行为，以及产生的成果与此前瞻性陈述中所表达或暗示的功能，和任何未来的实际情况可能存在重大差异。
+对于此类前瞻性陈述，我们不作任何声明或保证。本演示文稿中的所有前瞻性陈述仅代表截至本演示文稿提供之日的信息。公司明确不承担对本文稿中包含的任何前瞻性陈述进行任何更新或修订的义务，以反映其对此陈述所基于的任何事件、条件或情况变化的预期的任何义务或承诺</em>。</p>
+<h3 id="_1">概述</h3>
+<p>Punk.Network的通证经济旨在为一个以NFT类型资产为主要标的的、长久存续的、拥有足够竞争力与繁荣度的主网及应用生态提供经济与金融层面的基础。</p>
+<p>Punk.Network经济系统的设计是为了达成以下目的：
+1. 保障Punk.Network内持币者及网络贡献者的权益。
+2. 在区块链资产波动较大的客观事实下，力求Punk.Network生态实现长期稳定的发展。
+3. 给予PUNK有效赋能，使得网络生态的繁荣可以给予PUNK价值回馈。
+4. 减少学习成本，让更多人---不局限于区块链世界的既有用户，而是更多新的参与者---简单地理解与加入Punk.Network网络。
+5. 为以NFT为主要类型的资产的去中心化金融业务提供发展土壤。</p>
+<h3 id="punk">PUNK的分配</h3>
+<p>++初始分配++
+总量：8亿枚
+融资：20%（天使：4%，基石：7%，私募：9%）
+生态建设池：27%
+验证人节点：15%
+基金会：20%
+团队：18%(创始团队16%，顾问2%）</p>
+<p>++锁仓机制++
+早期投资者是Punk.Network的深度参与者与长期支持者。
+对于早期持有者的代币，PUNK将实施苛刻的锁仓机制，并错开各个轮次代币的解锁时间。
+作为补偿，Punk.Network蒋给予早期投资者相应的派息。
+开发团队的锁仓机制较之更为苛刻，以表达对Punk.Network长期存续支持的决心与信心。
+||锁仓周期|
+|-|-|
+|天使|    自全部募资结束后，锁仓期为10个月，6个月后每月10%线性释放。(锁仓期间派息PUNK本位年化-2.75%)|
+|基石|    自全部募资结束后，锁仓期为8个月，6个月后每月10%线性释放。(锁仓期间派息PUNK本位年化-2.75%)|
+|私募|    自全部募资结束后，锁仓期为6个月，6个月后每月10%线性释放。(锁仓期间派息PUNK本位年化-2.75%)|
+|团队|    至所有募资结束后开始计算，锁仓周期为一年，一年后月度线性释放40个月，每月释放2.5%。|</p>
+<p>++增发++
+增发作用：为贡献节点（验证人节点、提名人节点等）提供激励。
+增发率：Punk.Network网络内的NPoS Staking挖矿将由采用非线性的增发策略，具体数值取决于staking比率，策略沿用POLKADOT的挖矿公式。
+++PUNK的增发公式++
+预期抵押率 <strong>x_ideal</strong> = 50%
+预期年化收益率　<strong>i_ideal</strong>　= 20%
+抵押率为0时的通胀率 <strong>R0</strong>　= 0.025
+<strong>R1 = R0 + x * (i_ideal - R0 / x_ideal) 
+R2 = R0 + (i_ideal * x_ideal - R0) * 2 ^ ((x_ideal - x) / d)</strong>
+实际增发率 <strong>R</strong> = min(R1, R2)
+年化收益率 i = R / x
+在合理区间内，根据市场情况，社区有权利通过投票治理调整预期年化与预期抵押率。</p>
+<h3 id="_2">交易手续费</h3>
+<p>Punk.Network交易手续费沿用了Polkadot的逻辑。</p>
+<p>++交易费用++
+区块链网络中的资源是有限的，例如存储和计算。交易费用是用来防止用户消耗太多资源。 Punk.Network使用基于权重的收费模式，而不是 gas-metering 模式。 因此在执行交易之前需要先收取费用；一旦费用支付，节点将执行交易。
+- 每个区块都应有空间给特殊高优先的交易，例如不当行为报告。
+- 该系统应能够处理需求激增的问题。
+- 费用应缓慢变化，以便用户可以准确预测既定交易的费用。</p>
+<p>费用计算
+Punk.Network的费用是根据以下四个参数计算的:
+- 每字节费用 (亦称"字节费")
+- 权重费用
+- 小费(可选)
+字节费是每字节的固定费用和交易的字节大小的结果。</p>
+<p>权重是个固定数字，旨在管理验证块所花费的时间。 每笔交易都有基本权重，该权重考虑了包含(例如签名验证)的开销，而派遣权重则说明了执行交易的时间。 将总重量权重乘以每个重量费用即可计算交易的重量费用。
+小费是一种可选的交易费，用户可以添加来给予交易更优先的处理。
+这四个费用共同构成了费用。在执行交易之前，将从用户的帐户中扣除这笔费用。一部分费用将给区块生成者，其余部分将流向库房。在 Punk.Network的一开始阶段，该比例分别设置为20％和80％。</p>
+<p>++区块限制和交易优先++
+Punk.Network中的区块既有最大长度(字节)，也有最大权重。区块生产者将用这些限制填满交易到方块。每个区块的一部分―目前为25%―保留给与该区块操作相关的重要交易。区块生产者将只能使用区块正常交易的75%。一些操作交易例子：</p>
+<p>++错误报告++
+议会操作
+选举中的成员操作(例如放弃候选人)
+区块生产者根据每笔交易的总费用确定交易的优先次序。由于部分费用将给区块生产者，生产者将打包最高费用的交易，以获得最大回报。</p>
+<p>++费用调整++
+区块链上的交易量会出现不正常的情况，因此交易费用需要一种调整机制。然而，用户应该能够预测交易费用。
+Punk.Network 使用缓慢调整费用机制并提供小费来平衡这两个考虑。除了区块链限制， 
+Punk.Network 还有阻止填满的目标。根据当前区块相对于目标的充满度，下一个区块链的费用增加或减少。每次权重收费可在24小时内提高30％，这个比率反映出需求的长期趋势， 为了考虑短期跳跃，AoChain 在底线，字节和重量费用上使用小费。用户可以选择在收费中添加小费，给予交易更高的优先等级。</p>
+<p>++其他资源限制策略++
+交易权重必须在执行前可以计算，因此只能是固定逻辑。有些交易需要通过其他策略限制资源。例如:
+绑定(Bonds)：有些交易，如投票，有可能需要绑定保证金， 并在链上发生事件后退还或惩罚。 在投票的例子中，选举结束时返回，或者如果选民试图恶意行事，就会被惩罚。
+存款(Deposits): 有些交易, 如设置身份 或认领索引, 无限期地使用存储空间。 如果用户决定释放存储空间，这些存款将会被退还。
+烧毁(Burns)：交易可能会根据其内部逻辑烧毁资金。例如如果交易创建了新的存储，从而增加了状态容量，则交易可能会从用户那里烧毁资金。
+Limits: Some limits are part of the protocol. For example, nominators can only nominate 16 validators. This limits the complexity of Phragmén.</p>
+<p>++进阶++
+此页面仅涵盖来自普通用户的交易。 不过，如果你看到区块链浏览器的区块，你可能会看到一些"extrinsics"看起来与这些交易不同。 在 Punk.Network (以及建立在Substrate 上的任何链)中，extrinsic 在是一种来自链外的信息。 Extrinsics 可分为三类：
+- 签名交易
+- 无签名交易
+- Inherents
+此页面仅覆盖已签名的交易(signed transactions)，这是大多数用户与 Punk.Network 互动的方式。 有签名的交易来自有资金的帐户，因此 Punk.Network 可以收取交易费作为防止垃圾邮件的问题。</p>
+<p>无签名的交易(unsigned transactions) 是指用户需要提交不控制资金的密钥对外在的特殊情况。 例如当用户在上线后 领取他们的 COM 他们的 COM 地址还没有任何资金，因此是用了无签名的交易。验证人也会提交一些无签名的交易，其形式为 "heartbeat" 消息，表示它们在线。 这些 heartbeat 必须由验证人 session keys 之一签名。 Session keys 永远不会控制资金。 无签名的交易仅用于特殊情况，因为既然 Punk.Network 无法为它们收取费用，每个交易需要自定义的验证逻辑。</p>
+<p>最后，inherents 是没有签名或包含在交易队列中的信息。 因此，只有出块的人才能将固有的东西添加到区块中。 因为仅仅足够多的验证人已经同意它们是合理，就假定不信守者为 "真理"。 例如 Punk.Network 区块包括固有的时间戳。 没有办法证明时间戳是真实的，可以证明有签字的资金的发出。 相反验证人根据他们认为时间戳的合理程度接受或拒绝区块。 在 Punk.Network 中，它必须在他们自己的系统时钟的某个可接受范围之内。</p>
+<h3 id="punk_1">PUNK的职能</h3>
+<p>++治理++
+参与社区投票。
+++质押++
+质押代币，成为Punk.Network网络的贡献节点，并获得代币收益激励。
+++流通++
+PUNK是Punk.Network内原生的也是最主要的支付、交易和转账代币，也是将链外资产转化成链内资产的中转代币。
+++定价++
+在拥有足够的影响力及与网络内资产的关联性后，PUNK将逐步成为网络生态内资产的定价代币。
+++权益++
+PUNK将成为一种特殊的凭证---持有PUNK即代表是Punk.Network的社区成员。在这一基础上，生态内发布的资产将被鼓励向PUNK持有者进行空投，以形成双赢---应用将得到大量的流量和初始流动性，而PUNK的持有者将获得空投等权益---这些空投类似分红，是持续性出现和有相当价值的。
+++应用++
+PUNK会将影响力渗透入Punk.Network网络内的诸多DApp应用场景，这些场景将给予PUNK应用层面的赋能。
+++应用生态赋能++
+本部分主要阐述网原生代币PUNK与DApp或相关资产间的权益赋能机制。
+这一赋能总体框架可由一句话总结：从硬赋能到软赋能，从强干预到生态搭建。
+硬赋能：每种由创始团队或其与合作方共同发行的DApp，其生产的NFTs都将给予PUNK持有者一定量的代币空投、优先权或折扣优惠，在此环节，创始团队将对DApp运营策略进行强干预，保证PUNK原生代币与DApp产生权益层的强关联性。
+软赋能：硬赋能的基础上，PUNK将引导和鼓励开发者对PUNK持有者进行权益赋能，以形成双赢的局面---PUNK持有者将获得激励，而DApp开发者将获得大量的流量与初步的二级市场流动性。这一方案以共识为媒介，使得PUNK与Punk.Network网络内各类代币或NFT资产实现联动，形成一种良性的社区生态。</p>
+<h3 id="_3">金融生态</h3>
+<ol>
+<li>稳定币</li>
+</ol>
+<p>++中心化稳定币++
+中心化机构通过锁定现实法币进入经审计的银行账户，并等量在Punk.Network上发行链上稳定币---让我们假设这种代币的名称为PUSD，每个PUSD可以等值兑换回1美金。如此，即可以实现现实世界资产与链上资产的交互。</p>
+<p>++算法稳定币++
+基于算法的稳定币（如弹性供给的稳定币、或是基于超额抵押的稳定币）可以通过智能合约在Punk.Network上被发行。</p>
+<p>++波卡生态跨链稳定币++
+Punk.Network将致力于成为波卡的平行网络，如此波卡生态内的稳定币即可通过跨链交互在Punk.Network内使用。</p>
+<ol>
+<li>交易所</li>
+</ol>
+<p>++去中心化交易所++
+在Punk.Network网络内可以发行AMM为底层数学逻辑的去中心化交易所。
+++NFT交易所++
+在Punk.Network网络生态内，NFT交易所是最不可或缺的金融场景之一。
+NFTCASTEL.IO是Punk.Network网络生态早期核心的项目之一，致力于打造成全亚洲最大的艺术品交易所。
+++NFT标准化++
+Punk.Network底层技术支持将NFT转化为SNFT（Standardized NFT），表达了对一种具体的NFT资产的持有权益比例，降低了NFT资产的投资门槛，增加了NFT资产的流动性，使得NFT DEX交易成为可能。</p>
+<ol>
+<li>NFT借贷</li>
+</ol>
+<p>Punk.Network力主大力发展NFT资产金融及衍生品，最大力度释放其金融潜力。
+因其借贷模型的局限性，超额抵押借贷在区块链的应用层受到一定质疑，因其抵押其意义尚不明确、资金利用价值低、价值易被稀释（或是可被其他金融衍生品的组合替代）等特征。
+然而，NFT的去中心化借贷市场确实解决了部分问题。因NFT不可被拆分，流通属性较低，使得基于超额借贷成为了真实需求。
+++资产定价与确价++
+在NFT资产借贷层面，资产的公允定价与确价是需要解决的问题。
+    NFT创新性地采用“专业定价”+“去中心化确价”的模式，由行业顶尖的相关从业者组成的组织对需要抵押贷款的NFT资产进行初始定价，再由社区对这一价格进行确价，保障了需要进行抵押的NFT资产最终拥有公允的市场价格。</p>
+<h3 id="_4">总结</h3>
+<p>本文从代币的发行、分配、节点激励、代币赋能及金融场景等角度，阐述了Punk.Network经济层面的未来构想与远景。
+本文档的内容可能不完整，其落地进度、规模与也可能高于或低于实际预期。
+事实上，这正是区块链世界的魅力所在。
+沿着正确的方向，在预设的框架内，Punk.Network开发团队希冀与多方参与者，共同打造并维护一个繁荣的NFT生态。</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../12.course/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              课程列表
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d892486b.min.js"></script>
+      
+    
+  </body>
+</html>

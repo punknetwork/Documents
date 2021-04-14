@@ -1,0 +1,1061 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Punk Network Technical documents">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.0">
+    
+    
+      
+        <title>Accounts - punknetwork</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.33e2939f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#e92063">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="pink" data-md-color-accent="indigo">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#accounts" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="punknetwork" class="md-header__button md-logo" aria-label="punknetwork" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            punknetwork
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Accounts
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="punknetwork" class="md-nav__button md-logo" aria-label="punknetwork" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    punknetwork
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        首页
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        深入了解
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="深入了解" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          深入了解
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Structure/" class="md-nav__link">
+        系统架构
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Terminology/" class="md-nav__link">
+        术语整理
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Staking/" class="md-nav__link">
+        Staking
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Polkadot/" class="md-nav__link">
+        Polkadot生态开发者专页
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Accounts
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Accounts
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#accounts" class="md-nav__link">
+    Accounts(账户密钥+创建账户+账户地址+检查账户余额+账户余额说明）
+  </a>
+  
+    <nav class="md-nav" aria-label="Accounts(账户密钥+创建账户+账户地址+检查账户余额+账户余额说明）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    账户密钥
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#account-keys" class="md-nav__link">
+    Account Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stash-keys" class="md-nav__link">
+    Stash Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controller-keys" class="md-nav__link">
+    Controller Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-keys" class="md-nav__link">
+    Session Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strongly-typed-wrappers" class="md-nav__link">
+    Strongly Typed Wrappers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generation" class="md-nav__link">
+    Generation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    创建账户
+  </a>
+  
+    <nav class="md-nav" aria-label="创建账户">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generate-a-punknetwork-account" class="md-nav__link">
+    Generate a Punk.Network account
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#punknetwork-web-apps" class="md-nav__link">
+    Punk.Network Web Apps
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polkadotjs-browser-plugin" class="md-nav__link">
+    Polkadot.js Browser Plugin
+  </a>
+  
+    <nav class="md-nav" aria-label="Polkadot.js Browser Plugin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-the-browser-plugin" class="md-nav__link">
+    Install the Browser Plugin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subkey" class="md-nav__link">
+    Subkey
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polkadotjs-web-apps" class="md-nav__link">
+    Polkadot.js Web Apps
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coming-soon" class="md-nav__link">
+    Coming soon.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coming-soon_1" class="md-nav__link">
+    Coming soon.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storing-your-key-safely" class="md-nav__link">
+    Storing your key safely
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    账户地址
+  </a>
+  
+    <nav class="md-nav" aria-label="账户地址">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ss58-address-format" class="md-nav__link">
+    SS58 Address Format
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate-and-regenerate-account-address" class="md-nav__link">
+    Generate and Regenerate Account Address
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    检查账户余额
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#via-web-based-wallet" class="md-nav__link">
+    Via Web-based Wallet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#via-polkadotjs-extension" class="md-nav__link">
+    Via Polkadot.js Extension
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    账户余额说明
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.cryptography/" class="md-nav__link">
+        密码学
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8.key/" class="md-nav__link">
+        密钥
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../9.NFT/" class="md-nav__link">
+        NFT
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.contract/" class="md-nav__link">
+        合约
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11.govern/" class="md-nav__link">
+        治理
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12.course/" class="md-nav__link">
+        课程列表
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13.epaper/" class="md-nav__link">
+        PunkNetwork经济白皮书
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#accounts" class="md-nav__link">
+    Accounts(账户密钥+创建账户+账户地址+检查账户余额+账户余额说明）
+  </a>
+  
+    <nav class="md-nav" aria-label="Accounts(账户密钥+创建账户+账户地址+检查账户余额+账户余额说明）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    账户密钥
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#account-keys" class="md-nav__link">
+    Account Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stash-keys" class="md-nav__link">
+    Stash Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controller-keys" class="md-nav__link">
+    Controller Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-keys" class="md-nav__link">
+    Session Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strongly-typed-wrappers" class="md-nav__link">
+    Strongly Typed Wrappers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generation" class="md-nav__link">
+    Generation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    创建账户
+  </a>
+  
+    <nav class="md-nav" aria-label="创建账户">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generate-a-punknetwork-account" class="md-nav__link">
+    Generate a Punk.Network account
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#punknetwork-web-apps" class="md-nav__link">
+    Punk.Network Web Apps
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polkadotjs-browser-plugin" class="md-nav__link">
+    Polkadot.js Browser Plugin
+  </a>
+  
+    <nav class="md-nav" aria-label="Polkadot.js Browser Plugin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-the-browser-plugin" class="md-nav__link">
+    Install the Browser Plugin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subkey" class="md-nav__link">
+    Subkey
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polkadotjs-web-apps" class="md-nav__link">
+    Polkadot.js Web Apps
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coming-soon" class="md-nav__link">
+    Coming soon.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coming-soon_1" class="md-nav__link">
+    Coming soon.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storing-your-key-safely" class="md-nav__link">
+    Storing your key safely
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    账户地址
+  </a>
+  
+    <nav class="md-nav" aria-label="账户地址">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ss58-address-format" class="md-nav__link">
+    SS58 Address Format
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate-and-regenerate-account-address" class="md-nav__link">
+    Generate and Regenerate Account Address
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    检查账户余额
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#via-web-based-wallet" class="md-nav__link">
+    Via Web-based Wallet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#via-polkadotjs-extension" class="md-nav__link">
+    Via Polkadot.js Extension
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    账户余额说明
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Accounts</h1>
+                
+                <h2 id="accounts">Accounts(账户密钥+创建账户+账户地址+检查账户余额+账户余额说明）</h2>
+<h3 id="_1">账户密钥</h3>
+<p>Punk.Network uses multiple sets of public/private key pairs to represent participants of the network.</p>
+<h3 id="overview">Overview</h3>
+<p>Blockchain systems have participants in varying roles, for example from validators to normal users.
+As an example, the Punk.Network node uses a Nominated Proof-of-Stake (NPoS) algorithm to select validators. Validators and nominators may hold significant amounts of funds, so Punk.Network's Staking module introduces account abstractions that help keep funds as secure as possible.
+These abstractions are:
+- Accounts
+ - - Stash Key: The Stash account is meant to hold large amounts of funds. Its private key should be as secure as possible in a cold wallet.
+ - - Controller Key: The Controller account signals choices on behalf of the Stash account, like payout preferences, but should only hold a minimal amount of funds to pay transaction fees. Its private key should be secure as it can affect validator settings, but will be used somewhat regularly for validator maintenance.
+- Session Keys: Session keys are "hot" keys kept in the validator client and used for signing certain validator operations. They should never hold funds.</p>
+<h3 id="account-keys">Account Keys</h3>
+<p>A key pair can represent an account and control funds, like normal accounts that you would expect from other blockchains. In the context of Punk.Network's Balances module, these accounts must have a minimum amount (an "existential deposit") to exist in storage.
+Account keys are defined generically and made concrete in the runtime.
+To continue with our example of Stash and Controller accounts, the keys to these accounts are distinguished by their intended use, not by any underlying cryptographic difference. When creating Stash or Controller keys, all cryptography supported for normal account keys are also supported.</p>
+<h3 id="stash-keys">Stash Keys</h3>
+<p>The Stash keys are the public/private key pair that defines a Stash account. This account is like a "savings account" in that you should not make frequent transactions from it. Therefore, its private key should be treated with the utmost security, for example protected in a safe or layers of hardware security.
+Since the Stash key is kept offline, it designates a Controller account to make non-spending decisions with the weight of the Stash account's funds. It can also designate a Proxy account to vote in governance on its behalf.</p>
+<h3 id="controller-keys">Controller Keys</h3>
+<p>The Controller keys are the public/private key pair that defines a Controller account. In the context of Substrate's NPoS model, the Controller key will signal one's intent to validate or nominate.
+The Controller key is used to set preferences like the rewards destination and, in the case of validators, to set their Session keys. The Controller account only needs to pay transaction fees, so it only needs a minimal amount of funds.
+The Controller key can never be used to spend funds from its Stash account. However, actions taken by the Controller can result in slashing, so it should still be well secured.</p>
+<h3 id="session-keys">Session Keys</h3>
+<p>Session keys are "hot keys" that are used by validators to sign consensus-related messages. They are not meant to be used as account keys that control funds and should only be used for their intended purpose. They can be changed regularly; your Controller only needs to create a certificate by signing a session public key and broadcast this certificate via an extrinsic. Session keys are also defined generically and made concrete in the runtime.
+To create a Session key, validator operators must attest that a key acts on behalf of their Stash account (stake) and nominators. To do so, they create a certificate by signing the key with their Controller key. Then, they inform the chain that this key represents their Controller key by publishing the Session certificate in a transaction on the chain.
+Punk.Network provides the Session module, which allows validators to manage their session keys.</p>
+<h3 id="strongly-typed-wrappers">Strongly Typed Wrappers</h3>
+<p>You can declare any number of Session keys. For example, the default Punk.Network node uses three for BABE, GRANDPA, and "I'm Online". Other chains could have more or fewer depending on what operations the chain expects its validators to perform.
+These different Session keys could use the same cryptography, but serve very different purpose throughout your runtime logic. To prevent the wrong key being used for the wrong operation, strong Rust types wrap these keys, keeping them incompatible with one another and ensuring they are only used for their intended purpose.</p>
+<h3 id="generation">Generation</h3>
+<p>If a Session key is compromised, attackers could commit slashable behavior. Session keys should be changed regularly (e.g. every session) via the <a href="https://crates.parity.io/sc_rpc/author/trait.AuthorApi.html#tymethod.rotate_keys">rotate_keys RPC</a> for increased security.</p>
+<h2 id="_2">创建账户</h2>
+<h3 id="generate-a-punknetwork-account">Generate a Punk.Network account</h3>
+<p>There are several ways to generate a Punk.Network account, you can choose either one based on your preference. Once your account is created and you have your account secret phrase or secret seed, you can migrate your account from various medium by importing your account.</p>
+<h3 id="punknetwork-web-apps">Punk.Network Web Apps</h3>
+<ul>
+<li><a href="http://apps.aochain.io/">Punk.Network</a></li>
+<li>Punk.Network Mainnet (coming soon)
+TODO: complete guide</li>
+</ul>
+<h3 id="polkadotjs-browser-plugin">Polkadot.js Browser Plugin</h3>
+<p>The polkadot.js plugin provides a reasonable balance of security and usability. It provides a separate local mechanism to generate your address and interact with Polkadot.
+This method involves installing the polkadot.js plugin and using it as a “virtual vault," separate from your browser, to store your private keys. It also allows signing of transactions and similar functionality.</p>
+<h4 id="install-the-browser-plugin">Install the Browser Plugin</h4>
+<p>The browser plugin is available for both <a href="https://chrome.google.com/webstore/detail/polkadot%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd?hl=en">Google Chrome</a> and <a href="https://addons.mozilla.org/en-US/firefox/addon/polkadot-js-extension">FireFox</a>.
+After installing the plugin, you should see the orange and white polkadot.js logo in the menu bar of your browser.
+Click the Orange P symbol in your extensions to open the account manager dialog.
+Click "Create New Account" button and follow the instructions to have account created.
+&nbsp;  Make sure to store your mnemonic seed somewhere securely. You will need it to maintain access to your account.</p>
+<h4 id="subkey">Subkey</h4>
+<p>Subkey is recommended for technically advanced users who are comfortable with command line and compiling Rust code. Subkey allows you to generate keys on any device that can compile the code. Subkey may also be useful for automated account generation, using an air-gapped device other than one running iOS or Android or other specific purposes. It is not recommended for general users.
+To <a href="https://substrate.dev/docs/en/knowledgebase/integrate/subkey#installation">install Subkey</a>, run:</p>
+<pre><code class="language-language">$ curl https://getsubstrate.io -sSf | bash -s -- --fast
+$ cargo install --force --git https://github.com/paritytech/substrate subkey
+$ cargo build -p subkey
+</code></pre>
+<p>After installing Subkey successfully, run:</p>
+<pre><code class="language-language">subkey -n Punk.Network generate
+</code></pre>
+<p>You should see an output something like below- <strong>save all of this information somewhere secure you will not be able to recover your account if you lose your phrase or seed.</strong>
+Secret phrase destroy vague trend estate person civil cattle lab hockey tooth error pigeon` is account:</p>
+<blockquote>
+<p>Network ID/version: Punk.Network
+  Secret seed:        0x58e57817a2ccfa696ed6c3735d4cc4646f894bf7daf51a94f0c4702a92e40710
+  Public key (hex):   0x225ce1f9c178189d2a977a195f822ebbfb538b317f23f83ab35605fb009fa438
+  Account ID:         0x225ce1f9c178189d2a977a195f822ebbfb538b317f23f83ab35605fb009fa438
+  SS58 Address:       2owvscruh7PNbykGLMZPxHyjYdi1Ryanrm4PTxVKh85Ef8Dn</p>
+</blockquote>
+<p><strong>If you previously created an account without the -n Punk.Network flag, you need to derive the correct Address from your previous secret phrase or secret seed. You can use subkey -n Punk.Network inspect "YOUR SECRET PHRASE HERE" to obtain the Punk.Network Network-ID inclusive Address (SS58).</strong></p>
+<h3 id="polkadotjs-web-apps">Polkadot.js Web Apps</h3>
+<p>TODO: complete guide when Punk.Network is supported</p>
+<h3 id="coming-soon">Coming soon.</h3>
+<h3 id="coming-soon_1">Coming soon.</h3>
+<h3 id="storing-your-key-safely">Storing your key safely</h3>
+<p><strong>DISCLAIMER:</strong> Key Security Your secret seed is the only way to get access to your account. You must keep the secret both secure and private. If you share you secret with anyone they will be able to have full access to your account, including all of your funds. The secret, for this reason, is a target from hackers and others with bad intentions to steal your funds. We recommend a variety of account generation methods that have various convienience and security tradeoffs. Please review this page carefully before making your address so that you understand the risks of the account generation method you choose and how to properly mitigate them in order to keep your funds safe.</p>
+<p>The seed is your <strong>key</strong> to the account. Knowing the seed allows you, or anyone else who knows the seed, to re-generate and control this account.
+It is imperative to store the seed somewhere safe, secret, and secure. If you lose access to your account, you can re-create it by entering the seed. This also means that somebody else can have control over your account if they have access to your seed.
+For maximum security, the seed should be written down on paper or another non-digital device and stored in a safe place. You may also want to protect your seed from physical damage, as well (e.g. by storing in a sealed plastic bag to prevent water damage, storing it in a fireproof safe, etc.) It is recommended that you store multiple copies of the seed in geographically separate locations (e.g., one in your home safe and one in a safety deposit box at your bank).
+You should definitely not store your seed on any kind of computer that has or may have access to the internet in the future.</p>
+<h2 id="_3">账户地址</h2>
+<h3 id="ss58-address-format">SS58 Address Format</h3>
+<p>SS58 is a simple address format designed for Substrate based chains. There's no problem with using other address formats for a chain, but this serves as a robust default. It is heavily based on Bitcoin's Base-58-check format with a few alterations.
+The basic idea is a base-58 encoded value that can identify a specific account on the Substrate chain. Different chains have different means of identifying accounts. SS58 is designed to be extensible for this reason.
+The living specification for the SS-58 address format can be found on the Substrate GitHub wiki:
+<a href="https://github.com/paritytech/substrate/wiki/External-Address-Format-(SS58)">https://github.com/paritytech/substrate/wiki/External-Address-Format-(SS58)</a></p>
+<h3 id="generate-and-regenerate-account-address">Generate and Regenerate Account Address</h3>
+<p>You may see account address, address or public address in various articles, they essentially mean the same thing. You should understand this that once you have an account that means you have the secret phrase or secret seed, you can derive public key from it deterministicly. When encoding with various network id, you can get network related public address. That is to say, one private key can derives many public addresses depending on what network id you include in encoding process.
+If you have an account generated for Polkadot or Kusama, you already have an account that is enabled for Punk.Network, the private key or public key are exactly the same. All you need to find is its accordinate account address or address under Punk.Network context. You can achieve this using these methods:
+Web apps include a wide range of web based applications that help you manage accounts, this inlucde:
+- Punk.Network Apps
+- Polkadot.js Apps
+- Polkadot.js Browser Plugin</p>
+<p>Import your account through app if your account is not generated their, go to "options" or "preferences" whatever the application calls it, and choose "Punk.Network" from network selection. The application should display your account's address in Punk.Network format. This process also applies to Crab Network.
+Use an generated account's secret phrase or secret seed, you can find out your Punk.Network's address by running this command:</p>
+<pre><code class="language-language">$ subkey inspect &quot;YOUR_SECRET_PHRASE_OR_SECRET_SEED&quot;
+</code></pre>
+<p>Let's take a look at the example below, first we generate a Kusama account, using that account, we can find out Punk.Network's address:</p>
+<pre><code class="language-language">$ subkey generate
+</code></pre>
+<p>Secret phrase despair ball sibling trust captain glide hamster film banana food tree security` is account:</p>
+<blockquote>
+<p>Secret seed:        0xef0dce87bd91b90d1d9c3a16bb3a4c0b2c1c63e8b0f5428c366211a5fa3471c0
+  Public key (hex):   0x000789ce986659c3acf6b99b9c590ae5ae4fad4c0bce174ab245341c482f7e73
+  Account ID:         0x000789ce986659c3acf6b99b9c590ae5ae4fad4c0bce174ab245341c482f7e73
+  SS58 Address:       CaMksEyDesu7EfNY6HME1k534aKcX1fGynAQez6RL3xgRYp</p>
+</blockquote>
+<p><strong>Let's inspect secret phrase first:</strong></p>
+<pre><code class="language-language">$ subkey inspect &quot;despair ball sibling trust captain glide hamster film banana food tree security&quot;
+</code></pre>
+<p>Secret phrase despair ball sibling trust captain glide hamster film banana food tree security` is account:</p>
+<blockquote>
+<p>Secret seed:        0xef0dce87bd91b90d1d9c3a16bb3a4c0b2c1c63e8b0f5428c366211a5fa3471c0
+  Public key (hex):   0x000789ce986659c3acf6b99b9c590ae5ae4fad4c0bce174ab245341c482f7e73
+  Account ID:         0x000789ce986659c3acf6b99b9c590ae5ae4fad4c0bce174ab245341c482f7e73
+  SS58 Address:       2oAutjuRNJsXcB8o2cMjGRzsNps2VT5zJ2eGFbGuq1ZmBTYm</p>
+</blockquote>
+<p><strong>You will see last line SS58 Address is your account address in Punk.Network, which is 2oAutjuRNJsXcB8o2cMjGRzsNps2VT5zJ2eGFbGuq1ZmBTYm. Next let's inpsect secret seed when generating Kusama account, that should display the same account address:</strong></p>
+<pre><code class="language-language">$ subkey inspect &quot;0xef0dce87bd91b90d1d9c3a16bb3a4c0b2c1c63e8b0f5428c366211a5fa3471c0&quot;
+</code></pre>
+<p>Secret Key URI <code>0xef0dce87bd91b90d1d9c3a16bb3a4c0b2c1c63e8b0f5428c366211a5fa3471c0</code> is account:</p>
+<blockquote>
+<p>Secret seed:        0xef0dce87bd91b90d1d9c3a16bb3a4c0b2c1c63e8b0f5428c366211a5fa3471c0
+  Public key (hex):   0x000789ce986659c3acf6b99b9c590ae5ae4fad4c0bce174ab245341c482f7e73
+  Account ID:         0x000789ce986659c3acf6b99b9c590ae5ae4fad4c0bce174ab245341c482f7e73
+  SS58 Address:       2oAutjuRNJsXcB8o2cMjGRzsNps2VT5zJ2eGFbGuq1ZmBTYm</p>
+</blockquote>
+<p><strong>The same account address is displayed. You have your Punk.Network account address.</strong></p>
+<h3 id="_4">检查账户余额</h3>
+<p>Via Blockchain Explorer
+- Punkscan
+- <a href="https://alpsscan.beta.aochain.io/">Punk.Network Account Balance</a>
+- <a href="https://alpsscan.beta.aochain.io/">https://alpsscan.beta.aochain.io/</a> (coming soon)</p>
+<h3 id="via-web-based-wallet">Via Web-based Wallet</h3>
+<p>You can create an account or import your account's mnemonic seed or private key into web-based wallet to view real time balance.
+- <a href="https://polkadot.js/app">polkadot.js/app</a>
+-  (coming soon)</p>
+<h3 id="via-polkadotjs-extension">Via Polkadot.js Extension</h3>
+<p>Not supported yet, coming soon.
+Via CLI Tools and RPC
+TODO</p>
+<h3 id="_5">账户余额说明</h3>
+<p>When you view your account information, for example through Polkadot UI, you may see multiple subsections of balances.
+|Type|Explaination|
+|-|-|
+|Total  |The total PUNK, without excluding any type.|
+|Transferable|  The amount of PUNK that you can use or transfer.|
+|Reserved   |The amount of PUNK used or bonded for Governance actions, like voting, elections, or proposals.|
+|Bonded |The amount of PUNK bonded to use for staking, including validation and nomination.|
+|Locked |The total amount of unusable PUNK you have, the sum of reserved and bonded.|</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../Polkadot/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Polkadot生态开发者专页
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../7.cryptography/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              密码学
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d892486b.min.js"></script>
+      
+    
+  </body>
+</html>

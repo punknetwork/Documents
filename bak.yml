@@ -7,6 +7,17 @@ nav:
 - 深入了解: 
   - 系统架构: Structure.md
   - 术语整理: Terminology.md
+  - Staking: Staking.mdy.md
+  - Polkadot生态开发者专页: Polkadot.md
+  - Accounts: 6.Accounts.md
+  - 密码学: 7.cryptography.md
+  - 密钥: 8.key.md
+  - NFT: 9.NFT.md
+  - 合约: 10.contract.md
+  - 治理: 11.govern.md
+  - 课程列表: 12.course.md
+  - PunkNetwork经济白皮书：13.epaper.md
+  
 
 theme:
   name: 'material'

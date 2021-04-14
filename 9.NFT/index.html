@@ -16,7 +16,7 @@
     
     
       
-        <title>系统架构 - punknetwork</title>
+        <title>NFT - punknetwork</title>
       
     
     
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              系统架构
+              NFT
             
           </span>
         </div>
@@ -211,66 +211,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          系统架构
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Structure/" class="md-nav__link">
         系统架构
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    系统架构
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    架构设计
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    独立模式
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    引用文献
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -350,11 +295,79 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../9.NFT/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          NFT
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         NFT
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    介绍
+  </a>
+  
+    <nav class="md-nav" aria-label="介绍">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#erc-721nftsnftstandardized-nftnft" class="md-nav__link">
+    除却基本的ERC-721生成的NFT外，还创造了SNFT（Standardized NFT，标准化NFT)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    铸造机制
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    转移机制
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    销毁机制
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -437,29 +450,42 @@
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    系统架构
+    介绍
+  </a>
+  
+    <nav class="md-nav" aria-label="介绍">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#erc-721nftsnftstandardized-nftnft" class="md-nav__link">
+    除却基本的ERC-721生成的NFT外，还创造了SNFT（Standardized NFT，标准化NFT)
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    架构设计
+    铸造机制
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
-    独立模式
+    转移机制
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
-    引用文献
+    销毁机制
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -476,19 +502,41 @@
               
                 
                 
-                  <h1>系统架构</h1>
+                  <h1>NFT</h1>
                 
-                <h2 id="_1"><strong>系统架构</strong></h2>
-<h2 id="_2"><strong>架构设计</strong></h2>
-<p>为兼容适配Polkadot生态，Punk.Network采用substrate框架进行开发。这是一种用于构建分布式或去中心化系统的框架，比如加密货币项目，或消息总线系统。
-这是一种开发者友好的框架，公链上的DApp开发者可以更专注于产品的核心业务逻辑。
-Substrate框架中使用了Rust语言的宏，使得代码的运行更为简洁。宏在Rust中也是一种零成本抽象，会在编译器中把宏展开成更为复杂的Rust代码，再编译为Wasm。
-Punk.Network将同样采用NPoS共识机制作为激励模型，这是一种高效且低成本的共识机制，其利益分配也更合理---激励将被授予所有建设参与者而非一小部分节点。采用这一共识机制亦是对Polkadot生态的致敬。
-Punk.Network初始验证人节点数为21个，随着社区治理逐步增加。</p>
-<h2 id="_3"><strong>独立模式</strong></h2>
-<p>Punk.Network可以作为一个独立的公链网络运行，并负责自己的共识安全。</p>
-<h2 id="_4"><strong>引用文献</strong></h2>
-<p>[1] <a href="https://substrate.dev/">Substrate</a></p>
+                <h2 id="_1">介绍</h2>
+<h3 id="erc-721nftsnftstandardized-nftnft">除却基本的ERC-721生成的NFT外，还创造了SNFT（Standardized NFT，标准化NFT)</h3>
+<p>这解决了ERC-721生成的NFT的痛点，那就是不可分割。部分资产有类似这种需求，一件固定资产对标一个NFT，它可能是一辆汽车、一栋房子、一个域名，另外允许一些人持有此资产的一部分，以达到共享，共持的目的。为此我们对NFT进行了支持分割的改进。
+NFT模块可以创建不可替换资产并且具有拆分功能，当一个NFT被创建时可以选择进行拆分成特定的份数(SNFT，Standardized NFT)，份数是不支持小数点的，最小单位为1。NFT 只能有一个拥有者，SNFT则可以分发给多个拥有者。任何人都可以创建 NFT资产和转让资产，由于有拆分机制默认是不允许销毁的。
+当然也可以选择不进行分割，也就是分割份数为0，这跟ERC-721就是一样的概念了。</p>
+<h3 id="_2">铸造机制</h3>
+<p>从本质上讲，NFT是对一串数据的加密Hash，此数据安全并且不可逆，不可能通过NFT还原原始数据。用什么数据生成NFT是至关重要的，这段数据需要具有唯一性、权威性。
+任何人只要提供一串可信任的数据就可以铸造对应的NFT资产，可自由选择拆分或者不拆分。</p>
+<h3 id="_3">转移机制</h3>
+<ol>
+<li>NFT自身代表对资产的拥有权，如果用于分割共享，那么可能需要一个权威机构进行代持，并且出具相关所有权证明、分割证明和价值证明等。它只能转移给一个用户。</li>
+<li>SNFT 代表了一个人持有相关NFT资产的份额，一个NFT的SNFT可以由很多人共同持有,从而拥有了流通价值。</li>
+</ol>
+<h3 id="_4">销毁机制</h3>
+<p>由于具有分割机制，当NFT持有人进行销毁时，那么对应的SNFT也就失去了价值，为防止作恶和公平起见，销毁功能是禁用的。
+考虑到未来可能有理由开放销毁，那么到时会以社区投票的形式来决定是否开放。</p>
+<pre><code class="language-language">
+pub trait NFT&lt;AccountId&gt; {
+type AssetId;// 资产ID       
+type AssetInfo; // 资产信息       
+type AssetLimit: Get&lt;u128&gt;;// 全网资产数量上限         
+ type UserAssetLimit: Get&lt;u64&gt;; // 用户资产数量上限    
+fn total_asset() -&gt; u128;    // 资产总发行数量        
+fn burned_asset() -&gt; u128;// 资产销毁数量        
+fn total_for_account(account: &amp;AccountId) -&gt; u64;// 单个账户拥有的资产数量
+fn assets_for_account(account: &amp;AccountId) -&gt; Vec&lt;(Self::AssetId, Self::AssetInfo)&gt;;// 单个账户拥有的资产列表        
+fn account_for_asset(asset_id: &amp;Self::AssetId) -&gt; AccountId;// 资产对应的账户        
+fn mint(owner_account: &amp;AccountId, asset_info: Self::AssetInfo) -&gt; Result&lt;Self::AssetId, DispatchError&gt;;// 铸造资产        
+fn burn(asset_id: &amp;Self::AssetId) -&gt; DispatchResult;// 销毁资产        
+fn transfer(dest_account: &amp;AccountId, asset_id: &amp;Self::AssetId) -&gt; DispatchResult;// 转账    
+}
+
+</code></pre>
                 
               
               
@@ -507,7 +555,7 @@ Punk.Network初始验证人节点数为21个，随着社区治理逐步增加。
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href=".." class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../8.key/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -516,19 +564,19 @@ Punk.Network初始验证人节点数为21个，随着社区治理逐步增加。
               <span class="md-footer__direction">
                 Previous
               </span>
-              首页
+              密钥
             </div>
           </div>
         </a>
       
       
-        <a href="../Terminology/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../10.contract/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              术语整理
+              合约
             </div>
           </div>
           <div class="md-footer__button md-icon">
